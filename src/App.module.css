@@ -1,0 +1,30 @@
+.container {
+  background: #f1f1f1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  height: 80%;
+  width: 80%;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) and (max-height: 700px){
+  .box {
+    height: 100%;
+    width: 100%;
+  }
+}
